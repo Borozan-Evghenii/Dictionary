@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="light-theme">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./lib/FontAwesome/all.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Eng Dictionary</title>
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <img src="./img/book.svg" alt="logo" />
+        </div>
+        <div class="functional">
+          <div class="font-dropdown">
+            <button class="dropdown">
+              Serif
+              <span
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.9 7.15C3.15 6.9 3.446 6.775 3.788 6.775C4.12933 6.775 4.425 6.9 4.675 7.15L12 14.475L19.35 7.125C19.5833 6.89167 19.875 6.775 20.225 6.775C20.575 6.775 20.875 6.9 21.125 7.15C21.375 7.4 21.5 7.696 21.5 8.038C21.5 8.37933 21.375 8.675 21.125 8.925L12.7 17.325C12.6 17.425 12.4917 17.496 12.375 17.538C12.2583 17.5793 12.1333 17.6 12 17.6C11.8667 17.6 11.7417 17.5793 11.625 17.538C11.5083 17.496 11.4 17.425 11.3 17.325L2.875 8.9C2.64167 8.66667 2.525 8.37933 2.525 8.038C2.525 7.696 2.65 7.4 2.9 7.15Z"
+                    fill="var(--purple)"
+                  />
+                </svg>
+              </span>
+            </button>
+            <!-- <ul class="dropdown-content">
+              <li class="option">Serif</li>
+              <li class="option">SansSerif</li>
+            </ul> -->
+          </div>
+
+          <div class="toggler">
+            <div class="theme-toggle">
+              <div class="indicator"></div>
+            </div>
+            <img src="./img/moon.svg" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <form action="">
+        <input class="search" name="search" type="text" autocomplete="off" />
+        <button class="search-button">
+          <img src="./img/serch.svg" alt="" />
+        </button>
+      </form>
+    </div>
+  </body>
+  <script src="./lib/FontAwesome/all.js"></script>
+  <script src="./index.js"></script>
+</html>

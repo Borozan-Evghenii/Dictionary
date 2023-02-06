@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.dark-mode{
+  --bg: #183153;
+  --primar-color: #fff;
+  --second-color: #fff
+
+}
+.light-mode{
+  --bg: #fff;
+  --primar-color: #222;
+  --second-color: #
+}
+
+.serif{
+  --font-face: 'Libre Baskerville';
+  
+}
+.sans-serif{
+  --font-face: 'Arial';
+}
+
+body{
+  font-family: var(--font-face);
+  font-weight: bold;
+  font-size: 16px;
+  background-color: var(--bg);
+}
+
+header{
+  margin: 50px 0 ;
+}
+
+.container{
+  padding: 0 20px;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.functional{
+  display: flex;
+  align-items: center;
+  gap: 20px ;
+}
+
+.dropdown{
+  display: flex;
+  gap: 10px;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.font-dropdown{
+  padding: 0 20px;
+  border-right: 1px solid var(--primar-color);
+  position: relative;
+}
+
+.dropdown-content{
+  position: absolute;
+  right: 0;
+  font-size: inherit;
+  font-size: 14px;
+  border: 1px solid var(--gray);
+}
+
+.dropdown-content li{
+  padding: 15px 20px ;
+}
+.dropdown-content li:hover{
+  cursor: pointer;
+  background-color: var(--gray);
+  color: var(--dark);
+}
+
+.dropdown svg{
+  width: 10px;
+
+}
+
+.logo img{
+  width: 40px;
+  color: var(--primar-color);
+}
+
+.toggler{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.theme-toggle{
+  width: 40px;
+  height: 20px;
+  background-color: var(--dark-gray);
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3px;
+  transition: all .4s ease-in-out; 
+  cursor: pointer; 
+}
+
+
+
+.theme-toggle .indicator{
+  background-color: var(--white);
+  width: 14px;
+  height: 14px;
+  border-radius: 100px;
+  transition: all .4s ease-in-out;
+}
+.dark{
+  align-items: flex-end;
+  transition: all .4s ease-in-out;
+}
+
+
+
+form{
+  margin-top: 50px;
+  display: flex;
+  background-color:var(--gray);
+  align-items: center;
+  padding: 24px;
+  border-radius: 20px;
+}
+
+.search{
+  width: 100%;
+  background-color: var(--gray);
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.search-button{
+  cursor: pointer;
+}
