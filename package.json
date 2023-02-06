@@ -1,0 +1,26 @@
+{
+  "name": "dictionary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html --out-dir=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Borozan-Evghenii/Dictionary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Borozan-Evghenii/Dictionary/issues"
+  },
+  "homepage": "https://github.com/Borozan-Evghenii/Dictionary#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.58.0"
+  }
+}

@@ -6,31 +6,38 @@
   box-sizing: border-box;
 }
 
+/*Global Settings*/
 .dark-mode{
-  --bg: #183153;
+  --bg: #343e59;
   --primar-color: #fff;
-  --second-color: #fff
+  --second-color: #fff;
+  --gray: #fff
 
 }
 .light-mode{
   --bg: #fff;
   --primar-color: #222;
-  --second-color: #
+  --second-color: #7D5EA2;
+  --gray: #F4F4F4;
 }
 
-.serif{
+.Serif{
   --font-face: 'Libre Baskerville';
+  --font-weight: bold;
   
 }
-.sans-serif{
-  --font-face: 'Arial';
+.Sans-serif{
+  --font-face: 'Poppins';
+  --font-weight: regular;
 }
 
 body{
   font-family: var(--font-face);
-  font-weight: bold;
+  font-weight: var(--font-weight);
   font-size: 16px;
   background-color: var(--bg);
+  transition: all .2s ease;
+  
 }
 
 header{
@@ -55,32 +62,65 @@ header{
   gap: 20px ;
 }
 
+/*Font Switcher*/
+
 .dropdown{
   display: flex;
   gap: 10px;
+  padding: 10px 10px;
   font-family: inherit;
   font-weight: inherit;
   font-size: inherit;
+  color: var(--primar-color);
   background-color: transparent;
   cursor: pointer;
 }
 
 .font-dropdown{
   padding: 0 20px;
+  border: 1px solid transparent;
+  border-bottom: none;
   border-right: 1px solid var(--primar-color);
   position: relative;
+  cursor: pointer;
 }
+.font-dropdown:hover{
+  border-color: var(--gray);
+  border-radius: 20px 20px 0 0;
+  
+}
+.font-dropdown:hover .dropdown-content{
+  height: auto;
+  opacity: 1;
+  transition: all .4s ease;
+}
+
 
 .dropdown-content{
   position: absolute;
+  top: 40px;
   right: 0;
-  font-size: inherit;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-weight: var(--font-weight);
   font-size: 14px;
+  background-color: var(--white);
+  border-radius:  0 0 20px 20px;
   border: 1px solid var(--gray);
+  border-top:none ;
+  overflow: hidden;
+  height: 0%;
+  transition: all .4s ease;
+  opacity: 0;
 }
 
-.dropdown-content li{
+
+.option{
   padding: 15px 20px ;
+  background-color: var(--bg);
+  color: var(--primar-color);
 }
 .dropdown-content li:hover{
   cursor: pointer;
@@ -90,13 +130,9 @@ header{
 
 .dropdown svg{
   width: 10px;
-
 }
 
-.logo img{
-  width: 40px;
-  color: var(--primar-color);
-}
+/*Theme Toggler*/
 
 .toggler{
   display: flex;
@@ -105,10 +141,11 @@ header{
 }
 
 .theme-toggle{
-  width: 40px;
+  width: 35px;
   height: 20px;
-  background-color: var(--dark-gray);
+  background-color: transparent;
   border-radius: 100px;
+  border: 1px solid var(--primar-color);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -120,8 +157,8 @@ header{
 
 
 .theme-toggle .indicator{
-  background-color: var(--white);
-  width: 14px;
+  background-color: var(--primar-color);
+  width: 12px;
   height: 14px;
   border-radius: 100px;
   transition: all .4s ease-in-out;
@@ -132,7 +169,7 @@ header{
 }
 
 
-
+/*Search Form*/
 form{
   margin-top: 50px;
   display: flex;
@@ -154,3 +191,5 @@ form{
 .search-button{
   cursor: pointer;
 }
+
+/*# sourceMappingURL=/style.c61ab535.css.map */
