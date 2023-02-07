@@ -39,6 +39,8 @@ body {
 
 header {
   margin: 50px 0;
+  position: sticky;
+  top: 0;
 }
 
 .container {
@@ -181,4 +183,65 @@ form {
 
 .search-button {
   cursor: pointer;
+}
+
+/*
+Result Block
+*/
+.result-block {
+  margin-top: 50px;
+}
+
+.word {
+  font-size: 55px;
+  color: var(--primar-color);
+}
+
+.phonetic {
+  display: flex;
+  align-items: center;
+}
+
+.phonetic-text {
+  font-size: 24px;
+  margin-top: 20px;
+  color: var(--primar-color);
+}
+
+.meaning-block {
+  border-bottom: 1px solid var(--gray);
+  padding: 50px 0;
+  .meaning-header {
+    font-size: 18px;
+    font-style: italic;
+    color: var(--primar-color);
+  }
+  .block-heading {
+    color: var(--primar-color);
+    opacity: 0.8;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.meaning-list {
+  color: var(--primar-color);
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  gap: 10px;
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+.synonymes {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  .synonyme-block__heading {
+    color: var(--primar-color);
+    opacity: 0.8;
+  }
+  .synonyme {
+    color: var(--second-color);
+  }
 }

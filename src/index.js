@@ -1,9 +1,11 @@
-import { log } from "console";
 import { dictionary } from "./helpers/helper";
 
 const html = document.querySelector("html");
 const toggler = document.querySelector(".theme-toggle");
 const body = document.querySelector("body");
+const fontOptions = document.querySelectorAll(".option");
+const fontButton = document.querySelector(".font");
+const form = document.querySelector("form");
 
 toggler.addEventListener("click", (e) => {
   e.currentTarget.classList.toggle("dark");
@@ -15,9 +17,6 @@ toggler.addEventListener("click", (e) => {
     html.classList.add("light-mode");
   }
 });
-
-const fontOptions = document.querySelectorAll(".option");
-const fontButton = document.querySelector(".font");
 
 fontOptions.forEach((e) => {
   e.addEventListener("click", (e) => {
@@ -31,14 +30,9 @@ fontOptions.forEach((e) => {
   });
 });
 
-const form = document.querySelector("form");
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const value = form.search.value;
-  const data = dictionary(value).then((value) => renderPage(value));
-});
-
-function renderPage(value) {
   console.log(value);
-}
+  const data = dictionary(value).then();
+});

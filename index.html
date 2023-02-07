@@ -65,28 +65,29 @@
         </div>
       </div>
     </header>
-
-    <div class="container">
-      <form action="">
-        <input class="search" name="search" type="text" autocomplete="off" />
-        <button class="search-button">
-          <img src="./src/img/serch.svg" alt="" />
-        </button>
-      </form>
-    </div>
-    <div class="result-block">
+    <section class="form-section">
       <div class="container">
-        <div class="phonetic">
-          <div class="word-block">
-            <h1 class="word">Keywords</h1>
-            <p class="text"></p>
-          </div>
-          <div class="audio">
-            <audio src=""></audio>
-          </div>
-        </div>
+        <form action="">
+          <input class="search" name="search" type="text" autocomplete="off" />
+          <button class="search-button">
+            <img src="./src/img/serch.svg" alt="" />
+          </button>
+        </form>
       </div>
-    </div>
+    </section>
+    <section class="serch-result">
+      <div class="container">
+        <section class="phonetica">
+          <div class="phonetica-text">
+            <h1 class="phonetica-text__word">Keyboard</h1>
+            <p class="phonetica-text__subtitle">""/ki:bc:d/""</p>
+          </div>
+          <div class="phonetica-audio">
+            <audio></audio>
+          </div>
+        </section>
+      </div>
+    </section>
   </body>
-  <script src="./src/index.js"></script>
+  <script type="module" src="./src/index.js"></script>
 </html>

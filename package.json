@@ -19,8 +19,10 @@
   },
   "homepage": "https://github.com/Borozan-Evghenii/Dictionary#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
     "parcel": "^2.8.3",
     "parcel-bundler": "^1.12.5",
+    "posthtml-doctype": "^1.1.1",
     "sass": "^1.58.0"
   }
 }
