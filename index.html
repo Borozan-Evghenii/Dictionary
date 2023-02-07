@@ -16,8 +16,8 @@
 
     <title>Eng Dictionary</title>
   </head>
-  <body class="Serif">
-    <header>
+  <body class="Sans-serif">
+    <header class="page-header">
       <div class="container header-container">
         <div class="logo">
           <svg
@@ -69,7 +69,7 @@
       <div class="container">
         <form action="">
           <input class="search" name="search" type="text" autocomplete="off" />
-          <button class="search-button">
+          <button type="submit" class="search-button">
             <img src="./src/img/serch.svg" alt="" />
           </button>
         </form>
@@ -83,8 +83,42 @@
             <p class="phonetica-text__subtitle">""/ki:bc:d/""</p>
           </div>
           <div class="phonetica-audio">
-            <audio></audio>
+            <audio
+              src="https://api.dictionaryapi.dev/media/pronunciations/en/hello-au.mp3"
+            ></audio>
+            <div class="audio">
+              <svg
+                width="20"
+                height="25"
+                viewBox="0 0 20 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 12.5L0.500001 24.1913L0.500002 0.808657L20 12.5Z"
+                  fill="#7D5EA2"
+                />
+              </svg>
+            </div>
           </div>
+        </section>
+        <section class="meaning">
+          <!-- <header class="meaning-header">
+            <p class="meaning-header__text">noun</p>
+            <span class="line"></span>
+          </header>
+          <div class="meaning-content">
+            <p>Meaning</p>
+            <ul class="meaning-list">
+              <li class="meaning-list__ityem">
+                (etc.) A set of keys used to operate a typewrite, computer etc.
+              </li>
+            </ul>
+          </div>
+          <div class="meaning-synonymes">
+            <p>Synonymes</p>
+            <p class="synonym">electronic keyboard</p>
+          </div> -->
         </section>
       </div>
     </section>

@@ -24,5 +24,8 @@
     "parcel-bundler": "^1.12.5",
     "posthtml-doctype": "^1.1.1",
     "sass": "^1.58.0"
+  },
+  "dependencies": {
+    "google-dictionary-api": "^1.0.8"
   }
 }

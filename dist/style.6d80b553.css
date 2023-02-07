@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   border: none;
-  list-style: none;
   box-sizing: border-box;
 }
 
@@ -11,6 +10,7 @@
   --bg: #343e59;
   --primar-color: #fff;
   --second-color: #fff;
+  --second-color-light: #fff;
   --gray: #fff;
 }
 
@@ -18,6 +18,7 @@
   --bg: #fff;
   --primar-color: #222;
   --second-color: #7d5ea2;
+  --second-color-light: #eacffa;
   --gray: #f4f4f4;
 }
 
@@ -39,8 +40,12 @@ body {
   transition: all 0.2s ease;
 }
 
-header {
+.page-header {
   margin: 50px 0;
+  position: sticky;
+  top: 0;
+  padding: 20px 0;
+  background-color: var(--bg);
 }
 
 .container {
@@ -170,7 +175,7 @@ form {
   display: flex;
   background-color: var(--gray);
   align-items: center;
-  padding: 24px;
+  padding: 0 24px;
   border-radius: 20px;
 }
 
@@ -178,6 +183,7 @@ form {
   width: 100%;
   background-color: var(--gray);
   outline: none;
+  padding: 24px 0;
   font-size: inherit;
   font-family: inherit;
   font-weight: inherit;
@@ -185,6 +191,93 @@ form {
 
 .search-button {
   cursor: pointer;
+}
+
+/*Result Block*/
+.phonetica {
+  padding: 50px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.phonetica-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--primar-color);
+}
+.phonetica-text__word {
+  font-size: 55px;
+}
+.phonetica-text__subtitle {
+  color: var(--second-color);
+  font-size: 24px;
+}
+
+.audio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  background-color: var(--second-color-light);
+  border-radius: 100px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.audio:hover {
+  border-color: var(--second-color);
+}
+.audio svg {
+  padding-left: 3px;
+}
+
+.meaning {
+  padding: 50px 0;
+  color: var(--primar-color);
+}
+.meaning-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.meaning-header__text {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1;
+}
+.meaning-content {
+  padding-top: 50px;
+}
+.meaning .synonym {
+  padding: 7px 15px;
+  line-height: 1;
+  border-radius: 100px;
+  background-color: var(--second-color-light);
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--primar-color);
+  opacity: 0.1;
+}
+
+[class^=meaning-list-] {
+  margin: 20px 0 40px 0;
+  list-style: circle;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+[class^=meaning-synonymes-] {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  white-space: nowrap;
 }
 
 /*# sourceMappingURL=/style.6d80b553.css.map */
